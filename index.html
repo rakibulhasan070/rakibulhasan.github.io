@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakibul Hasan Antor — Portfolio</title>
+
+  <!-- ── Google Fonts ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ── Three.js CDN ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- ── Portfolio Styles ── -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Three.js Canvas ── -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ── Custom Cursor ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════ -->
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <!-- ════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════ -->
+  <section id="hero">
+    <div style="text-align:center;">
+
+      <div class="hero-badge">✦ Available for collabs</div>
+
+      <h1 class="hero-name">
+        <span class="line1">Rakibul Hasan</span>
+        <span class="line2">Antor</span>
+      </h1>
+
+      <div class="hero-roles">
+        <span class="role-tag">💻 Programmer</span>
+        <span class="role-tag">🎬 YouTuber</span>
+        <span class="role-tag">🎨 Designer</span>
+        <span class="role-tag">🐍 Python Dev</span>
+        <span class="role-tag">📚 SSC Student</span>
+      </div>
+
+      <p class="hero-bio">
+        A passionate SSC student from Bangladesh who codes, creates YouTube content,
+        designs thumbnails, and edits videos. Building the future one project at a time.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-ghost">Get In Touch</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+
+      <!-- Left: Text + Stats -->
+      <div class="about-text reveal">
+        <p class="section-label">✦ Who I Am</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p>Hey! I'm Rakibul Hasan Antor, a creative mind from Bangladesh.
+           Currently an SSC student deeply passionate about technology,
+           programming, and digital content creation.</p>
+
+        <p>I build things with code, create educational and entertaining YouTube videos,
+           design eye-catching thumbnails, and edit videos with precision.</p>
+
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Skills</div></div>
+          <div class="stat-card"><div class="stat-num">BD</div><div class="stat-label">Based In</div></div>
+          <div class="stat-card"><div class="stat-num">SSC</div><div class="stat-label">Student</div></div>
+          <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Ideas</div></div>
+        </div>
+      </div>
+
+      <!-- Right: Info Chips -->
+      <div class="reveal">
+        <div class="info-chip">
+          <span class="icon">📍</span>
+          <div>
+            <div style="font-size:13px; color:var(--text); font-weight:500;">Location</div>
+            <div style="font-size:12px;">Bangladesh</div>
+          </div>
+        </div>
+        <div class="info-chip">
+          <span class="icon">🎓</span>
+          <div>
+            <div style="font-size:13px; color:var(--text); font-weight:500;">Education</div>
+            <div style="font-size:12px;">SSC Student</div>
+          </div>
+        </div>
+        <div class="info-chip">
+          <span class="icon">🎬</span>
+          <div>
+            <div style="font-size:13px; color:var(--text); font-weight:500;">YouTube</div>
+            <div style="font-size:12px;">@EpicRakibul</div>
+          </div>
+        </div>
+        <div class="info-chip">
+          <span class="icon">💡</span>
+          <div>
+            <div style="font-size:13px; color:var(--text); font-weight:500;">Focus</div>
+            <div style="font-size:12px;">Tech · Content · Design</div>
+          </div>
+        </div>
+        <div class="info-chip">
+          <span class="icon">🚀</span>
+          <div>
+            <div style="font-size:13px; color:var(--text); font-weight:500;">Status</div>
+            <div style="font-size:12px; color:#00f5aa;">Open to collaborations</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+
+      <div style="text-align:center;" class="reveal">
+        <p class="section-label">✦ What I Do</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid reveal">
+
+        <div class="skill-card">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">HTML &amp; CSS</div>
+          <div class="skill-level">Web Development</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <div class="skill-name">Python</div>
+          <div class="skill-level">Programming</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🎬</span>
+          <div class="skill-name">Video Editing</div>
+          <div class="skill-level">Content Creation</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🖼️</span>
+          <div class="skill-name">Thumbnail Design</div>
+          <div class="skill-level">Graphic Design</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="reveal">
+        <p class="section-label">✦ My Work</p>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <div class="project-card">
+          <span class="project-emoji">🎨</span>
+          <div class="project-name">Thumbnail Design</div>
+          <div class="project-desc">
+            Designed eye-catching, click-worthy thumbnails for YouTube.
+            Bold typography, vivid colors, and strong visual hierarchy that drive views.
+          </div>
+          <div class="project-tags">
+            <span class="tag">Design</span>
+            <span class="tag">YouTube</span>
+            <span class="tag">Creative</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-emoji">🎬</span>
+          <div class="project-name">Video Editing</div>
+          <div class="project-desc">
+            Edited and produced YouTube videos — from educational content to AI-related
+            videos and class tutorials. Clean cuts, smooth transitions.
+          </div>
+          <div class="project-tags">
+            <span class="tag">Editing</span>
+            <span class="tag">Content</span>
+            <span class="tag">Production</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-emoji">🤖</span>
+          <div class="project-name">AI &amp; Educational Videos</div>
+          <div class="project-desc">
+            Created informative videos about Artificial Intelligence and various educational
+            topics. Making complex topics simple and engaging.
+          </div>
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">Education</span>
+            <span class="tag">YouTube</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="reveal">
+        <p class="section-label">✦ Let's Connect</p>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p style="color:var(--muted); font-size:15px; max-width:420px; margin:-24px auto 52px; line-height:1.9;">
+          Have a project, collab idea, or just want to say hi? I'm always open!
+        </p>
+      </div>
+
+      <div class="contact-grid reveal">
+
+        <a href="https://youtube.com/@EpicRakibul" target="_blank" class="contact-card youtube">
+          <span class="contact-icon">▶️</span>
+          <div class="contact-platform">YouTube</div>
+          <div class="contact-handle">@EpicRakibul</div>
+        </a>
+
+        <a href="mailto:epicrakibul@gmail.com" class="contact-card email">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-platform">Email</div>
+          <div class="contact-handle">epicrakibul@gmail.com</div>
+        </a>
+
+        <a href="https://github.com/EpicRakibul" target="_blank" class="contact-card github">
+          <span class="contact-icon">🐙</span>
+          <div class="contact-platform">GitHub</div>
+          <div class="contact-handle">EpicRakibul</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <p>Designed &amp; Built by <span>Rakibul Hasan Antor</span> · 2025 · Bangladesh 🇧🇩</p>
+  </footer>
+
+
+  <!-- ── Portfolio Scripts ── -->
+  <script src="script.js"></script>
+
+</body>
+</html>
