@@ -23,4 +23,4 @@ https://rakibulhasan070.github.io
 - Email: epicrakibul@gmail.com
 - GitHub: rakibulhasan070
 
-Made with love by Rakibul Hasan Antor
+Made by Rakibul Hasan Antor
