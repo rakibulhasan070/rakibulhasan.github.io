@@ -217,14 +217,167 @@ footer{position:relative;z-index:1;text-align:center;padding:40px 24px;color:rgb
         <span class="project-tag">AI · Education</span>
   
       </div>
-      <div class="glass project-card">
-  <img src="png (1).png" alt="Portfolio Website" style="width:100%;border-radius:10px;margin-bottom:1rem;object-fit:cover;height:160px;">
-  <div class="project-icon">🌐</div>
-  <h3>Web Development</h3>
-  <p>Personal portfolio website with red & black theme, animated stats, Bangladesh map and contact form.</p>
-  <span class="project-tag">HTML</span>
-  <span class="project-tag">CSS</span>
-  <span class="project-tag">JS</span>
+
+
+
+<!-- PREMIUM PROJECT CARD START -->
+
+<style>
+
+.premium-card{
+position:relative;
+overflow:hidden;
+border-radius:18px;
+padding:16px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+transition:0.4s;
+cursor:pointer;
+}
+
+.premium-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.premium-image{
+position:relative;
+height:190px;
+border-radius:14px;
+overflow:hidden;
+margin-bottom:14px;
+}
+
+.premium-image img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:top;
+opacity:0;
+transition:opacity 1s ease, transform 3s ease;
+}
+
+.premium-image img.active{
+opacity:1;
+transform:scale(1.05);
+}
+
+.live-badge{
+position:absolute;
+top:10px;
+right:10px;
+background:rgba(0,255,200,.15);
+border:1px solid rgba(0,255,200,.4);
+color:#00ffc8;
+font-size:.75rem;
+padding:4px 10px;
+border-radius:20px;
+backdrop-filter:blur(6px);
+}
+
+.project-title{
+font-size:1.2rem;
+margin:8px 0;
+}
+
+.project-desc{
+font-size:.9rem;
+opacity:.8;
+line-height:1.5;
+}
+
+.project-tags span{
+display:inline-block;
+background:#111;
+border:1px solid #333;
+padding:4px 10px;
+font-size:.75rem;
+border-radius:20px;
+margin-right:6px;
+margin-top:8px;
+}
+
+.view-btn{
+margin-top:12px;
+color:#00ffc8;
+font-weight:600;
+font-size:.9rem;
+}
+
+</style>
+
+
+<div class="glass premium-card"
+onclick="window.open('https://rakibulai.github.io/rakibulhasan.github.io/','_blank')">
+
+<div class="premium-image">
+
+<img src="project1.png" class="slide active">
+<img src="project2.png" class="slide">
+
+<div class="live-badge">🟢 Live</div>
+
+</div>
+
+<h3 class="project-title">Portfolio Website</h3>
+
+<p class="project-desc">
+Modern developer portfolio with animations, project showcase and contact form.
+</p>
+
+<div class="project-tags">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+<div class="view-btn">View Live Site →</div>
+
+</div>
+
+
+<script>
+
+const slides = document.querySelectorAll(".premium-image .slide");
+let current = 0;
+
+setInterval(()=>{
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current >= slides.length){
+current = 0;
+}
+
+slides[current].classList.add("active");
+
+},2500);
+
+</script>
+
+<!-- PREMIUM PROJECT CARD END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+      
       </div>
     </div>
   </div>
